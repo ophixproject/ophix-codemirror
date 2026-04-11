@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: ophix-codemirror
-Version: 2026.4.3.1
+Version: 2026.4.5.1
 Summary: Vendored CodeMirror editor widgets for Ophix Project Servers
 Author: Ophix Project
 License: MIT
@@ -9,73 +9,4 @@ Description-Content-Type: text/markdown
 Requires-Dist: Django>=4.2
 
 # ophix-codemirror
-
-Vendored CodeMirror editor widgets for **Ophix Project Servers**.
-
-Provides Django form widgets backed by the CodeMirror 5 editor, designed
-for air-gap safe deployment — no CDN dependencies at runtime.
-
----
-
-## Installation
-
-```bash
-pip install ophix-codemirror
-```
-
-Then download the CodeMirror static files (see below) and place them in
-the package's static directory before running `collectstatic`.
-
----
-
-## Widgets
-
-### `JSONCodeMirrorWidget`
-
-For `JSONField` fields. Pre-configured for JSON/JavaScript syntax highlighting.
-
-```python
-from ophix_codemirror.widgets import JSONCodeMirrorWidget
-
-class MyAdmin(admin.ModelAdmin):
-    def get_form(self, request, obj=None, **kwargs):
-        form = super().get_form(request, obj, **kwargs)
-        form.base_fields['my_json_field'].widget = JSONCodeMirrorWidget()
-        return form
-```
-
-### `CodeMirrorWidget`
-
-Base widget with explicit mode.
-
-```python
-from ophix_codemirror.widgets import CodeMirrorWidget
-
-widget = CodeMirrorWidget(mode="yaml", mode_file="mode/yaml.min.js")
-```
-
-### `DynamicCodeMirrorWidget`
-
-Mode switches when a format dropdown changes. Used by `ophix-conf` for
-the Configuration content field.
-
----
-
-## Static files
-
-CodeMirror assets must be downloaded and placed in:
-
-```
-src/ophix_codemirror/static/ophix_codemirror/codemirror/
-```
-
-See the README in that directory for download URLs and instructions.
-
----
-
-## Adding a new mode
-
-1. Download the mode JS file from the CodeMirror CDN
-2. Place it in `static/ophix_codemirror/codemirror/mode/`
-3. Add it to `CODEMIRROR_MODE_FILES` in `widgets.py`
-4. Release a new version
+Ophix codemirror files

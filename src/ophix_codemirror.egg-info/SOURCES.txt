@@ -13,6 +13,10 @@ src/ophix_codemirror.egg-info/top_level.txt
 src/ophix_codemirror/static/ophix_codemirror/codemirror/README.md
 src/ophix_codemirror/static/ophix_codemirror/codemirror/codemirror.min.css
 src/ophix_codemirror/static/ophix_codemirror/codemirror/codemirror.min.js
+src/ophix_codemirror/static/ophix_codemirror/codemirror/addon/fold/brace-fold.min.js
+src/ophix_codemirror/static/ophix_codemirror/codemirror/addon/fold/foldcode.min.js
+src/ophix_codemirror/static/ophix_codemirror/codemirror/addon/fold/foldgutter.min.css
+src/ophix_codemirror/static/ophix_codemirror/codemirror/addon/fold/foldgutter.min.js
 src/ophix_codemirror/static/ophix_codemirror/codemirror/mode/javascript.min.js
 src/ophix_codemirror/static/ophix_codemirror/codemirror/mode/properties.min.js
 src/ophix_codemirror/static/ophix_codemirror/codemirror/mode/toml.min.js

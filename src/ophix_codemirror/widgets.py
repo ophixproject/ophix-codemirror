@@ -147,8 +147,12 @@ class CodeMirrorWidget(_CodeMirrorMediaMixin, forms.Textarea):
 
         var editor = CodeMirror.fromTextArea(textarea, {cm_options_json});
         textarea._cm = editor;
-
         editor.on('change', function() {{ editor.save(); }});
+        editor.getWrapperElement().addEventListener('mousedown', function(e) {{
+            var pos = editor.coordsChar({{left: e.clientX, top: e.clientY}});
+            editor.focus();
+            editor.setCursor(pos);
+        }});
 
         {mode_js}
     }}
@@ -305,6 +309,11 @@ class DynamicCodeMirrorWidget(_CodeMirrorMediaMixin, forms.Textarea):
         }});
         textarea._cm = editor;
         editor.on('change', function() {{ editor.save(); }});
+        editor.getWrapperElement().addEventListener('mousedown', function(e) {{
+            var pos = editor.coordsChar({{left: e.clientX, top: e.clientY}});
+            editor.focus();
+            editor.setCursor(pos);
+        }});
 
         setEditorMode(editor);
 
