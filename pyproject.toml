@@ -28,5 +28,6 @@ where = ["src"]
 [tool.setuptools.package-data]
 ophix_codemirror = [
     "static/**/*",
+    "locale/**/*",
     "deploy_templates/**/*",
 ]

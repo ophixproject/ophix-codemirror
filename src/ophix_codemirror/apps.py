@@ -1,7 +1,8 @@
 from django.apps import AppConfig
+from django.utils.translation import gettext_lazy as _
 
 
 class OphixCodeMirrorConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
     name = "ophix_codemirror"
-    verbose_name = "Ophix CodeMirror"
+    verbose_name = _("Ophix CodeMirror")
