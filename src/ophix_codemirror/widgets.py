@@ -200,11 +200,12 @@ class JSONCodeMirrorWidget(CodeMirrorWidget):
     def __init__(self, *args, **kwargs):
         kwargs.setdefault('extra_cm_options', {})
         kwargs['extra_cm_options'].setdefault('foldGutter', True)
+        kwargs['extra_cm_options'].setdefault('lineWrapping', True)
         kwargs['extra_cm_options'].setdefault(
             'gutters', ['CodeMirror-linenumbers', 'CodeMirror-foldgutter']
         )
         super().__init__(
-            mode="javascript",
+            mode="application/json",
             mode_file=None,  # already declared in Media above
             *args,
             **kwargs,
