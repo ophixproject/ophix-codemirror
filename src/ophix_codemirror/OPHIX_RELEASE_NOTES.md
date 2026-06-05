@@ -1,6 +1,6 @@
 # Ophix Codemirror Release Notes
 
-## Unreleased
+## 2026.06.05.01
 
 - Dark mode support: CodeMirror editor now reskins to a dark colour scheme when the admin dark mode toggle is active (`[data-theme="dark"]`).
 
