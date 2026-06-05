@@ -54,6 +54,7 @@ class _CodeMirrorMediaMixin:
         css = {
             "all": (
                 f"{_STATIC_PREFIX}/codemirror.min.css",
+                "ophix_codemirror/css/codemirror-dark.css",
             )
         }
         js = (
@@ -187,6 +188,7 @@ class JSONCodeMirrorWidget(CodeMirrorWidget):
             "all": (
                 f"{_STATIC_PREFIX}/codemirror.min.css",
                 f"{_STATIC_PREFIX}/addon/fold/foldgutter.min.css",
+                "ophix_codemirror/css/codemirror-dark.css",
             )
         }
         js = (

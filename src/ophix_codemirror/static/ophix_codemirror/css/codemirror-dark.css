@@ -1,0 +1,76 @@
+/* CodeMirror dark-mode overrides — activated by [data-theme="dark"] on <html>
+   (the Django admin toggle selector used throughout Ophix).
+   Reskins the cm-s-default theme without loading a separate CodeMirror theme
+   file — colours are VS Code Dark+ inspired for readability. */
+
+[data-theme="dark"] .CodeMirror {
+    background: #1e1e1e;
+    color: #d4d4d4;
+}
+
+[data-theme="dark"] .CodeMirror-scroll {
+    background: #1e1e1e;
+}
+
+[data-theme="dark"] .CodeMirror-gutters {
+    background: #1e1e1e;
+    border-right: 1px solid #404040;
+}
+
+[data-theme="dark"] .CodeMirror-linenumber {
+    color: #858585;
+}
+
+[data-theme="dark"] .CodeMirror-cursor {
+    border-left-color: #d4d4d4;
+}
+
+[data-theme="dark"] .CodeMirror-secondarycursor {
+    border-left-color: #858585;
+}
+
+[data-theme="dark"] .CodeMirror-selected,
+[data-theme="dark"] .CodeMirror-focused .CodeMirror-selected {
+    background: #264f78;
+}
+
+[data-theme="dark"] .CodeMirror-activeline-background {
+    background: #2a2d2e;
+}
+
+[data-theme="dark"] .CodeMirror-matchingbracket {
+    outline: 1px solid #888;
+    color: #fff !important;
+}
+
+/* Syntax tokens */
+[data-theme="dark"] .cm-s-default .cm-comment    { color: #6a9955; }
+[data-theme="dark"] .cm-s-default .cm-atom       { color: #569cd6; }
+[data-theme="dark"] .cm-s-default .cm-number     { color: #b5cea8; }
+[data-theme="dark"] .cm-s-default .cm-keyword    { color: #569cd6; }
+[data-theme="dark"] .cm-s-default .cm-def        { color: #dcdcaa; }
+[data-theme="dark"] .cm-s-default .cm-variable   { color: #d4d4d4; }
+[data-theme="dark"] .cm-s-default .cm-variable-2 { color: #9cdcfe; }
+[data-theme="dark"] .cm-s-default .cm-variable-3,
+[data-theme="dark"] .cm-s-default .cm-type       { color: #4ec9b0; }
+[data-theme="dark"] .cm-s-default .cm-property   { color: #9cdcfe; }
+[data-theme="dark"] .cm-s-default .cm-operator   { color: #d4d4d4; }
+[data-theme="dark"] .cm-s-default .cm-attribute  { color: #9cdcfe; }
+[data-theme="dark"] .cm-s-default .cm-string     { color: #ce9178; }
+[data-theme="dark"] .cm-s-default .cm-string-2   { color: #ce9178; }
+[data-theme="dark"] .cm-s-default .cm-meta       { color: #d4d4d4; }
+[data-theme="dark"] .cm-s-default .cm-qualifier  { color: #d4d4d4; }
+[data-theme="dark"] .cm-s-default .cm-builtin    { color: #dcdcaa; }
+[data-theme="dark"] .cm-s-default .cm-bracket    { color: #d4d4d4; }
+[data-theme="dark"] .cm-s-default .cm-tag        { color: #4ec9b0; }
+[data-theme="dark"] .cm-s-default .cm-hr         { color: #858585; }
+[data-theme="dark"] .cm-s-default .cm-link       { color: #3b8eea; text-decoration: underline; }
+[data-theme="dark"] .cm-s-default .cm-error      { color: #f44747; }
+[data-theme="dark"] .cm-s-default .cm-header     { color: #569cd6; font-weight: bold; }
+[data-theme="dark"] .cm-s-default .cm-quote      { color: #6a9955; }
+
+/* Fold gutter markers */
+[data-theme="dark"] .CodeMirror-foldgutter-open,
+[data-theme="dark"] .CodeMirror-foldgutter-folded {
+    color: #858585;
+}
