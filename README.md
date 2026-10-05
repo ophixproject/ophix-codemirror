@@ -17,7 +17,10 @@ pip install ophix-codemirror
 
 ## What this plugin provides
 
-- Vendored CodeMirror 5.65.16 JavaScript and CSS assets
+- Vendored CodeMirror 5.65.16 JavaScript and CSS assets (MIT licensed, from
+  [codemirror/codemirror5](https://github.com/codemirror/codemirror5); its license is
+  bundled alongside the vendored files at
+  `static/ophix_codemirror/codemirror/LICENSE`)
 - `JSONCodeMirrorWidget` — JSON editor with fold gutter and auto pretty-print
 - `DynamicCodeMirrorWidget` — format-switching editor; switches CodeMirror mode
   based on a format dropdown with `data-codemirror-mode` attributes on each option.
